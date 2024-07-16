@@ -14,7 +14,7 @@ import requests
 trading_client = None
 
 # Check if connected to a whitelisted Wi-Fi network (Windows)
-def is_whitelisted_network(whitelisted_networks=['mylinuxbsd', 'mylinuxbsd4']):
+def is_whitelisted_network(whitelisted_networks=['Network 1', 'Network 2']):
     try:
         result = os.popen('netsh wlan show interfaces').read().strip()
         for line in result.split('\n'):
