@@ -9,38 +9,67 @@ My-Alpaca-Trading is a Python application that automates the trading of leverage
 - **Automated Trading**: Automatically buys and sells leveraged ETFs based on predicted future prices and predefined profit margins.
 - **GUI Interface**: Includes a simple Tkinter-based GUI for manual operation and real-time monitoring.
 
+## Prerequisites
+
+- Python 3.7+
+- Alpaca API account with API key and secret key
+
 ## Installation
 
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/auth-Afham/My-Alpaca-Trading.git
    cd My-Alpaca-Trading
-Install dependencies:
+   ```
 
-bash
-Copy code
-pip install -r requirements.txt
-Set up your Alpaca API credentials:
-Replace 'api-key' and 'secret-key' in LETFs.py with your Alpaca API key and secret key.
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Usage
+3. **Set up your Alpaca API credentials**:
+   - Create a `.env` file in the root directory of the project
+   - Add your Alpaca API credentials to the `.env` file:
+     ```
+     ALPACA_API_KEY=your_api_key_here
+     ALPACA_API_SECRET=your_secret_key_here
+     ```
+
+## Usage
+
 Run the application:
 
-bash
-Copy code
+```bash
 python LETFs.py
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any changes.
+```
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Configuration
 
-vbnet
-Copy code
+- Edit the `config.py` file to customize trading parameters, network whitelisting, and other settings.
 
-### Additional Notes
+## Contributing
 
-- **Dependencies**: Ensure to list all required packages in a `requirements.txt` file for easy installation.
-- **API Keys**: Make sure to replace placeholder API keys with actual credentials or guide users on setting up their own.
+Contributions are welcome! Please follow these steps:
 
-By following this structure and including the provided script, the repository will be well-organized and ready for public use and contribution.
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature-branch-name`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-branch-name`
+5. Submit a pull request
+
+Please make sure to update tests as appropriate and adhere to the project's coding standards.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Disclaimer
+
+This software is for educational purposes only. Use at your own risk. The authors and contributors are not responsible for any financial losses incurred through the use of this application.
+
+## Additional Notes
+
+- Ensure all required packages are listed in the `requirements.txt` file for easy installation.
+- Always use environment variables or a secure method to store API keys. Never commit sensitive information directly to the repository.
+- Regularly update the dependencies to ensure security and compatibility.
+- Consider adding a `CONTRIBUTING.md` file with detailed guidelines for contributors.
